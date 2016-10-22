@@ -146,10 +146,10 @@ public class MainActivity extends Activity {
 			ArrayList<Map<String,String>>persons=queryPerson();
 			SimpleAdapter adapter=new SimpleAdapter(MainActivity.this,persons,R.layout.result,new String[]{
 					"id","name","num"},new int[]{
-					R.id.,
-			});
+					R.id.personname,R.id.personnum,R.id.personid});
+			
 			ListResult.setAdapter(adapter);
-			break;
+			  default:break;
 
 		}
 		}
